@@ -114,14 +114,33 @@
 \resumeSubheading
 {University of Wisconsin - Madison}{Sep. 2021 -- May 2025}
 {Bachelor of Science in Computer Science (Honors) and Math}{Madison, Wisconsin}
-\resumeItem{}
+\resumeItem{Cumulative GPA: \textbf{3.9/4.0}, Honor: \textbf{Dean's List} 2021 - 2023}
 
 \resumeSubHeadingListEnd
 
 
-%-----------EXPERIENCE-----------
-\section{Experience}
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
 \resumeSubHeadingListStart
+
+\resumeSubheading
+{Tencent Xuanwu Lab}{Aug. 2023}
+{Security Researcher Intern}{Beijing, China}
+\resumeItemListStart
+\resumeItem{
+    Developed a \textbf{hardware-assisted} dynamic control flow analysis tool for
+  \textbf{Linux \& Windows} platform based on Last Branch Record (LBR), an Intel
+  hardware feature that records the branch jump addresses.
+}
+\resumeItem{
+  Implemented \textbf{kernel modules/drivers} to enable LBR and collect branch records
+  from the kernel. 
+}
+\resumeItem{
+  Designed a \textbf{user-mode} analysis library to reconstruct the control flow
+  graph from the collected branch records.
+}
+\resumeItemListEnd
 
 \resumeSubheading
 {UW - Madison Cybersecurity Operation Center}{Feb. 2023 -- Present}
@@ -132,25 +151,63 @@
   and Cisco Secure Endpoint (AMP).
 }
 \resumeItem{
-  Traced malicious traffic in Elastic and Palo Alto Panorama to notify security
-  alert to related user or department.
+  Traced malicious traffic in \textbf{Elastic} and \textbf{Palo Alto Panorama}
+  to notify security alert to related user or department.
 }
 \resumeItem{
-  Conducted security authorization and Identity Access Management (IAM) for
-  access restrictive accounts.
+  Conducted \textbf{security authorization} and \textbf{Identity and Access 
+  Management (IAM)} for access restrictive accounts.
+}
+\resumeItem{
+  Engaged in regular communication with team members and users, fostering a
+  \textbf{collaborative environment} to address security concerns and mitigate
+  potential threats.
+}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------Research EXPERIENCE-----------
+\section{Research Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{ASU SEFCOM/CDF Security Research Apprenticeship}{May. 2023 -- Aug. 2023}
+{Research Assistant}{Tempe, Arizona}
+\resumeItemListStart
+\resumeItem{
+  Developed and implemented a security research tool named "\textbf{LibHopper},"
+  a \textbf{Python} based automated \textbf{exploitation primitives finding
+  framework} for arbitrary user libraries.
+}
+\resumeItem{
+  Leveraged automated processes to streamline the evaluation of security
+  implications related to \textbf{memory corruption vulnerabilities} in library
+  internal structures, enhancing the capabilities of security researchers and
+  developers.
+}
+\resumeItem{
+  Employed a multifaceted methodology involving custom \textbf{GDB (GNU Debugger)
+  helper scripts} and \textbf{symbolic execution} techniques to conduct
+  comprehensive exploitability analysis.
+}
+\resumeItem{
+  Identified and cataloged \textbf{assets of exploitable primitives} within
+  library internal states, derived from meticulous analysis of memory corruption
+  scenarios and symbolic execution findings.
 }
 \resumeItemListEnd
 
 \resumeSubheading
 {Tencent Spark Early Career Program}{Jun. 2021 -- Present}
-{Cybersecurity Researcher Intern}{Shenzhen, China}
+{Research Assistant $|$ Remote}{Shenzhen, China}
 \resumeItemListStart
 \resumeItem{
   Conducted source code review of the modified Vijos Online Judge (OJ) system,
   identifying deserialization and sandbox escape vulnerabilities.
 }
 \resumeItem{
-  Successfully exploited the identified vulnerabilities, gaining root privileged
+  Exploited the identified vulnerabilities, gaining root privileged
   reverse shell within Docker container.
 }
 \resumeItem{
@@ -162,13 +219,12 @@
   vulnerability mentioned in CVE-2018-8879.
 }
 \resumeItem{
-  Applied Return Oriented Programming (ROP) techniques to establish reverse shell
-  and achieve full control over the router.
+  Applied \textbf{Return Oriented Programming (ROP)} techniques to establish
+  reverse shell and achieve full control over the router.
 }
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
-
 
 %-----------PROJECTS-----------
 \section{Projects}
@@ -190,7 +246,7 @@
   IDA at decompiled code level.
 }
 \resumeItem{
-  Successfully achieved Remote Code Execution (RCE) by exploiting vulnerabilities
+  Achieved Remote Code Execution (RCE) by exploiting vulnerabilities
   identified by the IDA plug-in.
 }
 % TODO: Collect CVE together
@@ -234,7 +290,7 @@
   DEF CON CTF Finals.
 }
 \resumeItem{
-  Actively participated in over 20 48-hour Capture the Flag (CTF) competitions since
+  Participated in over 20 48-hour Capture the Flag (CTF) competitions since
   2021, with a focus on Binary Exploitation (PWN) and Reverse Engineering challenges.
 }
 \resumeItemListEnd
@@ -261,8 +317,8 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-                \textbf{Languages}{: C/C++, Java, Python, x86-Assembly JavaScript, HTML/CSS, \LaTeX} \\
-                \textbf{Binary Security Tools/Framework}{: IDA/Ghidra, GDB/Windbg, Angr, Frida, Elastic Search, Joern} \\
+                \textbf{Programming Languages}{: C/C++, Python, Java, x86-Assembly JavaScript, HTML/CSS, \LaTeX} \\
+                \textbf{Binary Security Tools}{: IDA/Ghidra, GDB/Windbg, Angr, Frida, Elastic Search, Joern} \\
                 \textbf{Web Security Tools}{: Burpsuit, Wireshark, Metasploit Framework, Kali Linux} \\
           }}
 \end{itemize}

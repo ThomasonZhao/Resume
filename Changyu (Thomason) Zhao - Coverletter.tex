@@ -1,0 +1,114 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plain Cover Letter
+% LaTeX Template
+% Version 2.0 (February 14, 2023)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{letter} % Default font size of the document, can use values of 10pt, 11pt or 12pt, but you may need to adjust margins if reducing font size
+
+%----------------------------------------------------------------------------------------
+%	FONTS
+%----------------------------------------------------------------------------------------
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+\usepackage{fouriernc} % Use the URW Schoolbook L font, similar to New Century Schoolbook
+
+%----------------------------------------------------------------------------------------
+%	MARGINS
+%----------------------------------------------------------------------------------------
+
+\usepackage{geometry} % Required for adjusting page dimensions and margins
+
+\geometry{
+	paper=a4paper, % Paper size, change to letterpaper for US letter size
+	top=0.5in, % Top margin
+	bottom=0.5in, % Bottom margin
+	left=0.5in, % Left margin
+	right=0.5in, % Right margin
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE
+%----------------------------------------------------------------------------------------
+
+\date{\raggedright\today} % Left-aligned date of the letter, use \today for the current date
+
+\begin{letter}{
+	% Name and address of the person to whom the letter is being sent
+	% Dr. Robert Kelso \\
+	% Chief of Medicine \\
+	% Sacred Heart Hospital \\
+	% 12629 Riverside Drive \\
+	% North Hollywood, L.A. 91607
+}
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME & ADDRESS
+%----------------------------------------------------------------------------------------
+
+\begin{center}
+	\large\bfseries % Font size and styling
+	Changyu (Thomason) Zhao \\ % Your name
+	5019 Sheboygan Ave \\ % Your address and phone number
+	Madison, Wisconsin 53705 \\
+	(608) 886-7470
+\end{center}
+
+\vspace{1cm} % Vertical whitespace
+
+\signature{Changyu (Thomason) Zhao} % Your name for the signature at the bottom
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+\opening{Dear COMPANY,}
+
+I hope this letter finds you well. I am writing to express my strong interest in the Security Engineer internship position at [Company Name], as advertised on [where you found the job posting]. As a highly motivated and detail-oriented Computer Science and Mathematics student at the University of Wisconsin-Madison, I am eager to contribute my skills and passion for cybersecurity to your dynamic team.
+
+Throughout my academic journey, I have consistently demonstrated a commitment to excellence. My academic record, including a current cumulative GPA of 3.97/4.0 and inclusion on the Dean's List from 2021 to 2023, underscores my dedication to achieving high standards of performance.
+
+My professional experiences have honed my technical abilities and problem-solving skills, making me a valuable asset to [Company Name]. During my internship at Tencent Xuanwu Lab, I had the privilege to work on developing a hardware-assisted dynamic control flow analysis tool for Linux and Windows platforms. This project allowed me to deepen my understanding of low-level system programming, kernel modules, and hardware-level features like Last Branch Record (LBR). I was responsible for implementing kernel modules, collecting branch records, and designing a user-mode analysis library. This experience sharpened my ability to analyze complex systems, a crucial skill in the field of cybersecurity.
+
+As a current Cybersecurity Student Intern Analyst at UW-Madison Cybersecurity Operation Center, I have gained practical experience in threat detection, traffic analysis, and security authorization. My responsibilities include analyzing malicious traffic reports, conducting security authorizations, and collaborating with team members to address security concerns effectively. These experiences have honed my ability to work in a collaborative environment and respond to security incidents promptly.
+
+Furthermore, my summer internship at ASU SEFCOM/CDF Security Research Apprenticeship exposed me to the world of security research. I developed a tool named "LibHopper" to find exploitation primitives in user libraries, demonstrating my proficiency in Python and security analysis. This project allowed me to utilize custom GDB scripts and symbolic execution techniques, showcasing my problem-solving and research abilities.
+
+My passion for cybersecurity extends beyond the classroom and workplace. I am an active member of the r3kapig CTF Team, where I have consistently ranked highly in Capture the Flag competitions. This experience has equipped me with practical skills in binary exploitation and reverse engineering.
+
+In conclusion, I am enthusiastic about the opportunity to apply my academic achievements and practical experiences to the Security Engineer internship at [Company Name]. I am available to start [mention your availability], and I can be reached at [your phone number] or [your email address].
+
+Thank you for considering my application. I look forward to the possibility of contributing to [Company Name]'s commitment to cybersecurity excellence.
+
+\closing{Sincerely,}
+
+%\ps{P.S. An additional note or description.} % A postscript line for additional information or descriptions
+
+% \encl{Curriculum vitae, employment form} % List your enclosed documents here, comment this line for no enclosures
+
+%----------------------------------------------------------------------------------------
+
+\end{letter}
+
+\end{document}

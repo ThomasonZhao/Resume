@@ -1,4 +1,4 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -47,7 +47,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-12pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -119,8 +119,10 @@
 \resumeSubHeadingListEnd
 
 
-%-----------WORK EXPERIENCE-----------
-\section{Work Experience}
+% %-----------WORK EXPERIENCE-----------
+% \section{Work Experience}
+%-----------EXPERIENCE-----------
+\section{Experiences}
 \resumeSubHeadingListStart
 
 \resumeSubheading
@@ -128,17 +130,13 @@
 {Security Researcher Intern}{Beijing, China}
 \resumeItemListStart
 \resumeItem{
-    Developed a \textbf{hardware-assisted dynamic control flow analysis} tool for
-  Linux \& Windows platform based on \textbf{Last Branch Record (LBR)}, an Intel
-  hardware feature that records the branch jump addresses.
+  Engineered a cross-platform (Linux and Windows), \textbf{hardware-assisted dynamic control flow analysis} tool in \textbf{C\&C++} that leverages Intel's Last Branch Record (LBR) technology for enhanced system evaluation.
 }
 \resumeItem{
-  Implemented \textbf{kernel modules/drivers} to enable LBR and collect branch records
-  from the kernel. 
+  Designed and implemented custom \textbf{kernel modules} and \textbf{device drivers} to enable LBR feature for Linux \& Windows. 
 }
 \resumeItem{
-  Designed a user-mode analysis library to \textbf{reconstruct the control flow
-  graph} from collected branch records.
+  Architected and developed a user-mode analysis library that leverages collected LBR to accurately \textbf{reconstruct the control flow graph (CFG)} of executed programs. The library incorporated features for parsing, analysis, and visualization.
 }
 \resumeItemListEnd
 
@@ -156,8 +154,7 @@
   vulnerabilities and notify security alert to related users or departments.
 }
 \resumeItem{
-  Conducted \textbf{Identity and Access Management (IAM)} for access restrictive
-  student employee accounts.
+  Conducted \textbf{Identity and Access Management (IAM)} for access restrictive full-time and student employee accounts.
 }
 \resumeItem{
   Processed \textbf{Daliy Threat Intel} with team members, fostering a
@@ -166,36 +163,27 @@
 }
 \resumeItemListEnd
 
-\resumeSubHeadingListEnd
+% \resumeSubHeadingListEnd
 
-%-----------Research EXPERIENCE-----------
-\section{Research Experience}
-\resumeSubHeadingListStart
+% %-----------Research EXPERIENCE-----------
+% \section{Research Experience}
+% \resumeSubHeadingListStart
 
 \resumeSubheading
 {ASU SEFCOM/CDF Security Research Apprenticeship}{May. 2023 -- Aug. 2023}
 {Research Assistant}{Tempe, Arizona}
 \resumeItemListStart
 \resumeItem{
-  Developed and implemented a security research tool named "\textbf{LibHopper},"
-  a \textbf{Python} based \textbf{automated exploitation primitives finding
-  framework} for arbitrary user libraries.
+  Conceptualized, designed, and implemented LibHopper, a \textbf{Python-based} security research tool designed to \textbf{automate the discovery of exploitation primitives} within arbitrary user libraries.
 }
 \resumeItem{
-  Leveraged automated processes to pipeline the evaluation of security
-  implications related to \textbf{memory corruption vulnerabilities} in library
-  internal structures, enhancing the capabilities of security researchers and
-  developers.
+  Leveraged automated processes to pipeline the evaluation of security implications related to \textbf{memory corruption vulnerabilities} in library internal structures, enhancing the capabilities of security researchers and developers.
 }
 \resumeItem{
-  Employed a multifaceted methodology involving \textbf{customizing debugger
-  scripts} and \textbf{symbolic execution} techniques to conduct comprehensive
-  exploitability analysis.
+  Employed a multifaceted methodology involving \textbf{customizing debugger scripts} and \textbf{symbolic execution} techniques to conduct comprehensive exploitability analysis.
 }
 \resumeItem{
-  Identified and cataloged \textbf{assets of exploitable primitives} within
-  library internal states, derived from meticulous analysis of memory corruption
-  scenarios and symbolic execution findings on 6 widely-used C standard libraries.
+  Identified and cataloged \textbf{assets of exploitable primitives} within library internal states, derived from meticulous analysis of memory corruption scenarios and symbolic execution findings on 6 most widely-used C standard libraries.
 }
 \resumeItemListEnd
 
@@ -206,28 +194,23 @@
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{Router automated vulnerability discovery} $|$ \emph{IDA, GDB, QEMU, Python}}{May 2022 -- Aug.2022}
+{\textbf{Router automated vulnerability discovery} $|$ \emph{Reverse Engineering, Firmware, Python}}{May 2022 -- Aug.2022}
 \resumeItemListStart
 \resumeItem{
-  Exploited unfixed Common Vulnerabilities and Exposures (CVE) in \textbf{Tenda
-  AC18 router firmware}.
+  Exploited unfixed Common Vulnerabilities and Exposures (CVE) in \textbf{Tenda AC18 router firmware}.
 }
 \resumeItem{
-  Employed \textbf{qemu} to rehost arm32 router firmware on an x86-64 machine,
-  enabling systematic debugging.
+  Employed \textbf{qemu} to rehost arm32 router firmware on an x86-64 machine, enabling systematic debugging.
 }
 \resumeItem{
-  Developed \textbf{automated} stack overflow and command injection detection
-  IDA plug-in at decompiled code level.
+  Developed \textbf{automated} stack overflow and command injection detection IDA plug-in at decompiled code level.
 }
 \resumeItem{
-  Achieved Remote Code Execution (RCE) by \textbf{exploiting} vulnerabilities
-  identified by the IDA plug-in.
+  Achieved Remote Code Execution (RCE) by \textbf{exploiting} vulnerabilities identified by the IDA plug-in.
 }
 % TODO: Collect CVE together
 \resumeItem{
-  Discovered multiple unfixed CVEs: CVE-2018-16334, CVE-2018-5767, CVE-2018-5768,
-  CVE-2018-5770, CVE-2020-15916, CVE-2022-28556, CVE-2022-28557.
+  Discovered multiple unfixed CVEs: CVE-2018-16334, CVE-2018-5767, CVE-2018-5768, CVE-2018-5770, CVE-2020-15916, CVE-2022-28556, CVE-2022-28557.
 }
 \resumeItemListEnd
 
@@ -240,16 +223,13 @@
 \resumeSubheading
 % TODO: Make it awards
 {r3kapig CTF Team}{Sep. 2021 -- Present}
-{Team member}{}
+{Team member}{China}
 \resumeItemListStart
 \resumeItem{
-  Achieved a notable accomplishment by securing a rank 12/1282 worldwide in the
-  DEFCON 30 CTF Finals (2022), and 7/1828 worldwide in the DEFCON 31 CTF
-  Finals (2023).
+  Achieved a notable accomplishment by securing a rank 12/1282 worldwide in the DEFCON 30 CTF Finals (2022), and 7/1828 worldwide in the DEFCON 31 CTF Finals (2023).
 }
 \resumeItem{
-  Participated in over 40 48-hour Capture the Flag (CTF) competitions since
-  2021, with a focus on Binary Exploitation (PWN) and Reverse Engineering challenges.
+  Participated in over 40 48-hour Capture the Flag (CTF) competitions since 2021, with a focus on Binary Exploitation (PWN) and Reverse Engineering challenges.
 }
 \resumeItemListEnd
 
@@ -258,13 +238,10 @@
 {Independent Learning}{Tempe, Arizona}
 \resumeItemListStart
 \resumeItem{
-  Attained the Yellow Belt and Blue Belt levels by completing all 472 challenges in
-  the Dojo instance, currently ranked 43 out of 2500+ participants.
+Attained the Yellow Belt and Blue Belt levels by completing \textbf{all} challenges in Dojo instance, currently ranked 43/2500+.
 }
 \resumeItem{
-  Acquired comprehensive skills in various areas of binary exploitation, including
-  program interaction, shellcoding, privilege escalation, reverse engineering, stack
-  corruption, heap corruption, race conditions, and kernel security.
+  Acquired comprehensive skills in various areas of \textbf{software and system security}, including program interaction, shellcoding, privilege escalation, reverse engineering, stack corruption, heap corruption, race conditions, and kernel security.
 }
 \resumeItemListEnd
 
@@ -278,8 +255,8 @@
     \textbf{Proficient} in reverse engineering, have reverse experience in
     large-scale projects. \textbf{Familiar} with control flow tracking, data flow
     tracking, symbolic execution and the use of binary analysis tools. \\
-    \textbf{Programming Languages}{: C/C++, Python, Java, x86-Assembly, JavaScript, HTML/CSS, \LaTeX} \\
-    \textbf{Binary Security Tools}{: IDA/Ghidra, GDB/Windbg, Angr, Frida, Joern} \\
+    \textbf{Programming Languages}{: C/C++, Python, Java, Assembly Language, JavaScript, HTML/CSS, \LaTeX} \\
+    \textbf{Binary Security Tools}{: IDA/Ghidra, GDB/Windbg, Angr, Qemu, Frida, Joern} \\
     \textbf{Web Security Tools}{: Burpsuit, Wireshark, Metasploit Framework, Kali Linux} \\
     \textbf{Soft Skills}{: Time/Project Management, Collaboration, Conflict Resolution, Active Listening} \\
           }}

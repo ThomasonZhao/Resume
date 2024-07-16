@@ -101,9 +101,10 @@
 %----------HEADING----------
 \begin{center}
   \textbf{\LARGE \scshape Changyu (Thomason) Zhao} \\ \vspace{1pt}
-  \small 608-886-7470 $|$ \href{mailto:czhao249@wisc.edu}{\underline{czhao249@wisc.edu}} $|$
-  \href{https://www.linkedin.com/in/changyu-zhao-550924222/}{\underline{linkedin.com/in/changyu-zhao}} $|$
-  \href{https://github.com/ThomasonZhao}{\underline{github.com/ThomasonZhao}}
+  \small 608-886-7470
+  $|$ \href{mailto:thomasonzhao@outlook.com}{\underline{thomasonzhao@outlook.com}}
+  $|$ \href{https://www.linkedin.com/in/changyu-zhao-550924222/}{\underline{linkedin.com/in/changyu-zhao}}
+  % $|$ \href{https://github.com/ThomasonZhao}{\underline{github.com/ThomasonZhao}}
 \end{center}
 
 
@@ -126,40 +127,20 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Tencent Xuanwu Lab}{Aug. 2023}
-{Security Researcher Intern}{Beijing, China}
-\resumeItemListStart
-\resumeItem{
-  Engineered a cross-platform (Linux and Windows), \textbf{hardware-assisted dynamic control flow analysis} tool in \textbf{C\&C++} that leverages Intel's Last Branch Record (LBR) technology for enhanced system evaluation.
-}
-\resumeItem{
-  Designed and implemented custom \textbf{kernel modules} and \textbf{device drivers} to enable LBR feature for Linux \& Windows. 
-}
-\resumeItem{
-  Architected and developed a user-mode analysis library that leverages collected LBR to accurately \textbf{reconstruct the control flow graph (CFG)} of executed programs. The library incorporated features for parsing, analysis, and visualization.
-}
-\resumeItemListEnd
-
-\resumeSubheading
 {UW-Madison Cybersecurity Operation Center}{Feb. 2023 -- Present}
 {Cybersecurity Student Intern Analyst}{Madison, Wisconsin}
 \resumeItemListStart
 \resumeItem{
-  Managed security incidents, including respond to alerts, investigate security
-  breaches, and take corrective action.
+  Managed security incidents, including responding to alerts, investigating security breaches, and taking corrective action.
 }
 \resumeItem{
-  Use \textbf{Elastic} and \textbf{Palo Alto Firewall} to monitor and
-  \textbf{analyze campus network traffic}, to identify potential threats and
-  vulnerabilities and notify security alert to related users or departments.
+  Used \textbf{Elastic} and \textbf{Palo Alto Firewall} to \textbf{monitor and analyze campus network traffic}, identify potential threats and vulnerabilities, and notify security alerts to relevant users or departments.
 }
 \resumeItem{
-  Conducted \textbf{Identity and Access Management (IAM)} for access restrictive full-time and student employee accounts.
+  Conducted \textbf{Identity and Access Management (IAM)} procedures to manage access for full-time and student employee accounts.
 }
 \resumeItem{
-  Processed \textbf{Daliy Threat Intel} with team members, fostering a
-  \textbf{collaborative environment} to address security concerns and mitigate
-  potential threats in campus.
+  Collaborated with team members to \textbf{process daily threat intelligence}, fostering a \textbf{collaborative environment} to address security concerns and mitigate potential threats on campus.
 }
 \resumeItemListEnd
 
@@ -170,20 +151,35 @@
 % \resumeSubHeadingListStart
 
 \resumeSubheading
-{ASU SEFCOM/CDF Security Research Apprenticeship}{May. 2023 -- Aug. 2023}
+{ASU SEFCOM/CDF Security Research Apprenticeship}{May. 2023 -- Aug. 2023 \& May. 2024 -- Sep. 2024}
 {Research Assistant}{Tempe, Arizona}
 \resumeItemListStart
 \resumeItem{
-  Conceptualized, designed, and implemented LibHopper, a \textbf{Python-based} security research tool designed to \textbf{automate the discovery of exploitation primitives} within arbitrary user libraries.
+  Conceptualized, designed, and implemented \textbf{LibHopper}, a Python-based security research tool designed to \textbf{automate the discovery of exploitation primitives} within arbitrary user libraries.
 }
 \resumeItem{
-  Leveraged automated processes to pipeline the evaluation of security implications related to \textbf{memory corruption vulnerabilities} in library internal structures, enhancing the capabilities of security researchers and developers.
+  Leveraged automated processes to \textbf{pipeline the evaluation of security implications} related to memory corruption vulnerabilities in library internal structures, enhancing the capabilities of security researchers and developers.
 }
 \resumeItem{
-  Employed a multifaceted methodology involving \textbf{customizing debugger scripts} and \textbf{symbolic execution} techniques to conduct comprehensive exploitability analysis.
+  Employed a multifaceted methodology involving \textbf{customizing debugger scripts} and \textbf{symbolic execution techniques} to conduct comprehensive \textbf{exploitability analysis}.
 }
 \resumeItem{
-  Identified and cataloged \textbf{assets of exploitable primitives} within library internal states, derived from meticulous analysis of memory corruption scenarios and symbolic execution findings on 6 most widely-used C standard libraries.
+  Identified and cataloged \textbf{exploitable primitives} within library internal states, derived from meticulous analysis of memory corruption scenarios and symbolic execution findings on the 30 most widely-used C standard libraries.
+}
+\resumeItemListEnd
+
+\resumeSubheading
+{Tencent Security Xuanwu Lab}{Aug. 2023}
+{Security Research Intern}{Beijing, China}
+\resumeItemListStart
+\resumeItem{
+  Developed \textbf{LibIHT}, a cross-platform (Linux and Windows), \textbf{hardware-assisted dynamic control flow analysis} tool in \textbf{C and C++} that leverages Intel's \textbf{Last Branch Record (LBR)} and \textbf{Branch Trace Store (BTS)} hardware tracing features for enhanced system evaluation.
+}
+\resumeItem{
+  Designed and implemented \textbf{kernel modules} and \textbf{device drivers} to enable tracing features for Linux and Windows. 
+}
+\resumeItem{
+  Architected and developed a user-mode analysis library that leverages collected trace information to \textbf{accurately reconstruct the control flow graph (CFG)} of executed programs. The library incorporated features for parsing, analysis, and visualization.
 }
 \resumeItemListEnd
 
@@ -197,20 +193,16 @@
 {\textbf{Router automated vulnerability discovery} $|$ \emph{Reverse Engineering, Firmware, Python}}{May 2022 -- Aug.2022}
 \resumeItemListStart
 \resumeItem{
-  Exploited unfixed Common Vulnerabilities and Exposures (CVE) in \textbf{Tenda AC18 router firmware}.
+  Discovered and reported multiple previously \textbf{unknown vulnerabilities} (CVE-2018-16334, CVE-2018-5767, etc.) in the Tenda AC18 router firmware.
 }
 \resumeItem{
-  Employed \textbf{qemu} to rehost arm32 router firmware on an x86-64 machine, enabling systematic debugging.
+  Developed an \textbf{automated IDA Pro plugin} to systematically detect \textbf{stack overflow and command injection vulnerabilities} in the decompiled router firmware.
 }
 \resumeItem{
-  Developed \textbf{automated} stack overflow and command injection detection IDA plug-in at decompiled code level.
+  Leveraged \textbf{QEMU} to \textbf{rehost the ARM-based router firmware} on an x86-64 machine, enabling \textbf{in-depth debugging and analysis}.
 }
 \resumeItem{
-  Achieved Remote Code Execution (RCE) by \textbf{exploiting} vulnerabilities identified by the IDA plug-in.
-}
-% TODO: Collect CVE together
-\resumeItem{
-  Discovered multiple unfixed CVEs: CVE-2018-16334, CVE-2018-5767, CVE-2018-5768, CVE-2018-5770, CVE-2020-15916, CVE-2022-28556, CVE-2022-28557.
+  Demonstrated the ability to \textbf{achieve Remote Code Execution (RCE)} by exploiting the identified vulnerabilities.
 }
 \resumeItemListEnd
 
@@ -256,7 +248,7 @@ Attained the Yellow Belt and Blue Belt levels by completing \textbf{all} challen
     large-scale projects. \textbf{Familiar} with control flow tracking, data flow
     tracking, symbolic execution and the use of binary analysis tools. \\
     \textbf{Programming Languages}{: C/C++, Python, Java, Assembly Language, JavaScript, HTML/CSS, \LaTeX} \\
-    \textbf{Binary Security Tools}{: IDA/Ghidra, GDB/Windbg, Angr, Qemu, Frida, Joern} \\
+    \textbf{Binary Security Tools}{: IDA Pro/Ghidra, GDB/Windbg, Angr, Qemu, Frida, Joern} \\
     \textbf{Web Security Tools}{: Burpsuit, Wireshark, Metasploit Framework, Kali Linux} \\
     \textbf{Soft Skills}{: Time/Project Management, Collaboration, Conflict Resolution, Active Listening} \\
           }}

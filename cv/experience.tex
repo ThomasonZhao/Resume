@@ -1,7 +1,7 @@
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Experience}
+\cvsection{Work Experience}
 
 
 %-------------------------------------------------------------------------------
@@ -11,47 +11,14 @@
 
 %---------------------------------------------------------
   \cventry
-    {Undergraduate Research Assistant} % Job title
-    {MadS\&P - Security and Privacy Research Group at UW-Madison} % Organization
-    {Madison, WI, U.S.A} % Location
-    {Sep. 2024 - Present} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Conducting research on novel binary tracing techniques using LibIHT, a cross-platform library for accessing various Intel hardware trace features, to enhance performance and accuracy of dynamic analysis tools.}
-        \item {Developed tracing solutions utilizing Intel hardware features to collect fine-grained execution data, resulting in reduced performance overhead for dynamic binary analysis.}
-        \item {Collaborating with a team of Ph.D. students to integrate LibIHT with other dynamic tracing tools, aiming to improve analysis capabilities and precision.}
-        \item {Contributing to a research paper on the performance gains and improved accuracy achieved with LibIHT, targeting submission to a top-tier conference.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
     {Cybersecurity Student Intern Analyst} % Job title
     {UW-Madison Cybersecurity Operation Center} % Organization
     {Madison, WI, U.S.A} % Location
     {Feb. 2023 - Present} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Managed 400+ daily campus security incidents, responded to alerts, and took corrective action to prevent data breaches and security threats, contributing to a 30\% reduction in incident resolution time.}
-        \item {Utilized Elastic and Palo Alto Firewall to monitor and analyze campus network traffic, identifying potential threats and vulnerabilities, and notifying relevant campus users or departments to take timely action.}
-        \item {Developed Python scripts to automate data collection and analysis, reducing manual workload by 50\% and significantly improving incident response efficiency.}
-        \item {Conducted Identity and Access Management (IAM) compliance audits for 200+ employee accounts, ensuring adherence to security protocols and reducing unauthorized access risks.}
-        \item {Collaborated with team members to process daily threat intelligence, enhancing the campus security posture and mitigating risks before they could escalate.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Undergraduate Research Assistant} % Job title
-    {SEFCOM - Laboratory of Security Engineering for Future Computing at ASU} % Organization
-    {Tempe, AZ, U.S.A} % Location
-    {May 2024 - Aug. 2024} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Assisted in the design and development of Oxidizer, a Rust-specific decompiler aimed at recovering high-level control flow structures and struct data types from compiled Rust binaries.}
-        \item {Collaborated in brainstorming and designing effective evaluation methodologies for Oxidizer's outcomes, focusing on qualitative metrics to assess decompilation accuracy and struct recovery.}
-        \item {Collected and curated datasets of Rust binaries to support testing and evaluation, ensuring a representative sample for qualitative assessment.}
-        \item {Worked with the research team to develop and refine evaluation metrics, targeting the improvement of Oxidizer's capabilities in preparation for submission to top-tier security conferences.}
+        \item {Conducted security incident response and analysis for 400+ security incidents, including malware infections, phishing attack, unauthorized access attempts, and network intrusions, utilizing Elastic search for log analysis, threat hunting and investigation, and recommending remediation actions.}
+        \item {Managed monthly identity and access management (IAM) compliance attestation audits for 500+ employee accounts.}
       \end{cvitems}
     }
 
@@ -63,28 +30,9 @@
     {Jul. 2023 - Aug. 2023} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed LibIHT, a cross-platform, hardware-assisted dynamic control flow analysis tool in C and C++ that leverages Intel hardware tracing features such as Last Branch Record (LBR) and Branch Trace Store (BTS). Presented LibIHT at Black Hat Arsenal 2024, demonstrating its capabilities to the security community.}
-        \item {Designed and implemented kernel modules and device drivers to enable Intel hardware tracing features for both Linux and Windows platforms, ensuring compatibility across different environments.}
-        \item {Architected a user-mode analysis library to reconstruct control flow graphs (CFG) from trace data, providing enhanced capabilities for program tracing, profiling, and reverse engineering.}
-        \item {Optimized the trace data collection pipeline to minimize performance overhead, resulting in an efficient and scalable solution for real-time dynamic tracing.}
-        \item {Developed a framework for integrating LibIHT with other dynamic analysis tools, allowing seamless interoperability with existing frameworks and enabling more comprehensive trace analysis.}
-        \item {Collaborated closely with the research team and external stakeholders to refine LibIHT, incorporating community feedback gathered during the Black Hat Arsenal presentation.}
-        \item {Contributing to a paper focused on showcasing the improved performance, accuracy, and control flow analysis capabilities of LibIHT, targeting submission to a top-tier security conference.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Undergraduate Research Assistant} % Job title
-    {SEFCOM - Laboratory of Security Engineering for Future Computing at ASU} % Organization
-    {Tempe, AZ, U.S.A} % Location
-    {May 2023 - Jul. 2023} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed LibHopper, a Python-based tool designed to automate the discovery of exploitation primitives in user libraries, focusing on improving the efficiency of vulnerability research processes.}
-        \item {Leveraged automated processes to pipeline the evaluation of security implications related to memory corruption, reducing manual analysis time by providing structured, repeatable assessments.}
-        \item {Customized debugger scripts and implemented symbolic execution techniques to conduct a comprehensive exploitability analysis, enabling deeper insights into potential vulnerabilities.}
-        \item {Performed security analysis on popular user libraries, including \textit{libpng} and \textit{libjpeg}, successfully identifying multiple potential vulnerabilities and generating detailed reports for further mitigation efforts.}
+        \item {Engineered \textbf{LibIHT}, a cross platform dynamic binary tracing framework in C, C++, and Python to analyze control flow behavior of large programs with low overhead, leveraging Intel hardware tracing features such as Last Branch Record (LBR) and Branch Trace Store (BTS).}
+        \item {Architected cross platform capabilities for Linux and Windows kernel driver to interface with Intel hardware features and provide full control on user-space tracing, implemented a unified set of API abstraction on kernel APIs for cross platform compatibility and avoiding duplicated code logic.}
+        \item {Developed a user-space library to provide user-friendly high-level API access for customized user applications to interact with the tracing framework, implemented a plugin system for easy integration with debuggers like GDB and WinDbg to visualize and analyze the tracing data.}
       \end{cvitems}
     }
 

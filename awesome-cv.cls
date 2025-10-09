@@ -632,6 +632,7 @@
 % Usage: \cvsection{<section-title>}
 \newcommand{\cvsection}[1]{%
   \vspace{\acvSectionTopSkip}
+  \vspace{-3mm}
   \sectionstyle{#1}
   \phantomsection
   \color{sectiondivider}\vhrulefill{0.9pt}

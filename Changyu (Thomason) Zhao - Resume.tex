@@ -1,0 +1,266 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-12pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  \textbf{\LARGE \scshape Changyu (Thomason) Zhao} \\ \vspace{10pt}
+  \small
+  \href{mailto:thomasonzhao@outlook.com}{\faEnvelope \space \underline{thomasonzhao@outlook.com}}
+  $|$ \href{http://blog.thomasonzhao.cn}{\faHome \space \underline{blog.thomasonzhao.cn}}
+  $|$ \href{https://www.linkedin.com/in/changyu-zhao}{\faLinkedinSquare \space \underline{changyu-zhao/}}
+  $|$ \href{https://github.com/ThomasonZhao}{\faGithubSquare \space \underline{ThomasonZhao}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Stanford University}{Sep. 2025 -- Jun. 2027 (expected)}
+{M.S. in Computer Science (Computer and Network Security)}{Stanford, California}
+% \resumeItem{}
+
+\resumeSubheading
+{University of Wisconsin-Madison}{Sep. 2021 -- May 2025}
+{B.S. in Computer Science (Honors) and Mathematics}{Madison, Wisconsin}
+\resumeItem{GPA: \textbf{3.95/4.0}, David Dewitt Undergraduate Scholarship, Dean's List (all semesters)}
+
+\resumeSubHeadingListEnd
+
+
+% %-----------WORK EXPERIENCE-----------
+% \section{Work Experience}
+%-----------EXPERIENCE-----------
+\section{Experiences}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{UW-Madison Cybersecurity Operation Center}{Feb. 2023 -- May 2025}
+{Cybersecurity Student Intern Analyst}{Madison, Wisconsin}
+\resumeItemListStart
+\resumeItem{
+  Investigated \textbf{1000+ security incidents} (malware, phishing, intrusions) using \textbf{Elastic SIEM}. Developed \textbf{threat hunting queries and detection rules} that reduced MTTR by \textbf{40\%} and repeat infections by \textbf{25\%}.
+}
+\resumeItem{
+  Conducted monthly \textbf{IAM attestations} for \textbf{500+ accounts} using automated scripts, remediating 3\% toxic access in 24h.
+}
+\resumeItemListEnd
+
+% \resumeSubHeadingListEnd
+
+% %-----------Research EXPERIENCE-----------
+% \section{Research Experience}
+% \resumeSubHeadingListStart
+
+\resumeSubheading
+{UW-Madison MadS\&P Lab}{Sep. 2024 -- Aug. 2025}
+{Research Assistant, Advisor: Prof. Patrick McDaniel}{Madison, Wisconsin}
+\resumeItemListStart
+\resumeItem{
+  Conducted \textbf{comprehensive evaluation} of LibIHT against Intel Pin and DynamoRIO on real-world workloads, demonstrating \textbf{150x speedup}, \textbf{99\%+ code coverage}, and \textbf{complete resistance} to anti-debugging techniques employed by malware.
+}
+\resumeItem{
+  Established \textbf{reproducible benchmarking infrastructure} with 21 coreutils binaries and 10 malware specimens, automating performance metrics collection and visualization in \textbf{Python}. Paper accepted by \textbf{ACM CCS 2025} SURE workshop.
+}
+\resumeItemListEnd
+
+\resumeSubheading
+{ASU SEFCOM Lab}{May. 2024 -- Sep. 2024}
+{Research Assistant, Advisor: Prof. Yan Shoshitaishvili and Ruoyu Wang}{Tempe, Arizona}
+\resumeItemListStart
+\resumeItem{
+  Co-designed Oxidizer, the first \textbf{Rust-focused decompiler} built atop angr, implementing control-flow recovery, function prototype inference, and macro inference to address the unique challenges of analyzing memory-safe compiled binaries.
+}
+\resumeItem{
+  Developed \textbf{static type recovery engine} to extract Rust-specific type metadata from compiled binaries and integrates findings into decompilation, improving accuracy of data structure and function signature reconstruction for security analysis.
+}
+\resumeItemListEnd
+
+\resumeSubheading
+{Tencent Security Xuanwu Lab}{Jul. 2023 -- Aug. 2023}
+{Security Researcher Intern}{Beijing, China}
+\resumeItemListStart
+\resumeItem{
+  Architected \textbf{LibIHT}, a cross-platform dynamic binary tracing framework in \textbf{C/C++/Python} that leverages Intel LBR/BTS hardware features for control-flow tracing, achieving \textbf{150x speedup} over Intel Pin on large-scale program analysis.
+}
+\resumeItem{
+  Designed unified \textbf{kernel driver architecture} for Linux and Windows with abstraction layers for OS and hardware, reducing code duplication by \textbf{40\%} while standardizing trace session management and improving cross-platform maintainability.
+}
+\resumeItem{
+  Implemented \textbf{user-space API library} and debugger plugin system for \textbf{GDB/WinDbg} integration, enabling security analysts to visualize execution traces, identify anomalous control-flow patterns, and accelerate vulnerability discovery workflows.
+}
+\resumeItemListEnd
+
+\resumeSubheading
+{ASU SEFCOM Lab}{May. 2023 -- Jul. 2023}
+{Research Assistant, Advisor: Prof. Yan Shoshitaishvili}{Tempe, Arizona}
+\resumeItemListStart
+\resumeItem{
+  Developed \textbf{LibHopper}, an automated exploitation primitive discovery tool combining debugger instrumentation with \textbf{symbolic execution} to identify exploitable memory corruption opportunities in library state structures.
+}
+\resumeItem{
+  Constructed \textbf{exploitation primitives dataset} spanning critical C libraries (OpenSSL, OpenSSH, libcurl, libpng), providing structured risk assessments to inform security research in automated exploit generation and vulnerability scanning tooling.
+}
+\resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Router automated vulnerability discovery} $|$ \emph{IoT, Reverse Engineering, Web Security}}{May 2022 -- Aug.2022}
+\resumeItemListStart
+\resumeItem{
+  Developed static \textbf{automated vulnerability discovery} framework for IoT firmware with IDA plugin script. Uncovered \textbf{7 unfixed CVEs} in Tenda AC 18 router, including stack overflow and command injection vulnerabilities.
+}
+\resumeItem{
+  Performed \textbf{dynamic analysis} using \textbf{QEMU} rehosting and \textbf{GDB} to craft PoC exploits for identified vulnerabilities.
+}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PRESENTATIONS&PUBLICATIONS-----------
+% \section{Presentations \& Publications}
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%   \small{\item{
+%     Yibo Liu, Zion Basque, Arvind Raj, Chavin Udomwongsa, Chang Zhu, Jie Hu, \textbf{Changyu Zhao}, Fangzhou Dong, Adam Doupé, Tiffany Bao, Yan Shoshitaishvili, and Ruoyu Wang. "Toward Concise and High-fidelity Rust Decompilation." In \textit{Proceedings of the Network and Distributed System Security Symposium (NDSS)}, February 2026. (In submission) \\
+%     \textbf{Changyu Zhao}, Yohan Beugin, Jean-Charles Noirot Ferrand, Quinn Burke, Guancheng Li, and Patrick McDaniel. "LibIHT: A Hardware-Based Approach to Efficient and Evasion-Resilient Dynamic Binary Analysis". In \textit{Proceedings of the 1st Workshop on Software Understanding and Reverse Engineering (SURE 2025)}. ACM, October 2025. \\
+%     Black Hat Arsenal, \textit{LIBIHT: A Cross-Platform Library for Accessing Intel Hardware Trace Features}, Las Vegas, NV, Aug. 2024
+%   }}
+% \end{itemize}
+
+%-----------EXTRACURRICULAR ACTIVITIES-----------
+\section{Extracurricular Activities}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{r3kapig CTF Team}{Sep. 2021 -- Present}
+{Team Member}{International}
+\resumeItemListStart
+\resumeItem{
+  Entered \textbf{DEFCON CTF world final} from 2022 to 2025, ranked 12th, 7th, 4th, and 5th respectively.
+}
+\resumeItem{
+  Competed in \textbf{120+ CTF competitions}, expert in kernel and user-space exploitation and reverse engineering.
+}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Programming Languages}{: C/C++, Python, Java, Assembly Language (x86/x64, ARM, MIPS), \LaTeX} \\
+    \textbf{Binary Security Tools}{: IDA Pro/Ghidra, GDB/Windbg, Angr, Qemu, Frida, Joern} \\
+    \textbf{Web Security Tools}{: Burpsuit, Wireshark, Metasploit Framework, Kali Linux} \\
+  }}
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}

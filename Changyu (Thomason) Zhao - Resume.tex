@@ -63,7 +63,7 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-3pt}\item
+  \vspace{-4pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -71,14 +71,14 @@
 }
 
 \newcommand{\resumeSubSubheading}[2]{
-    \vspace{-3pt}\item
+    \vspace{-4pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \vspace{-3pt}\item
+    \vspace{-4pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
@@ -117,6 +117,7 @@
 \resumeSubheading
 {Stanford University}{Sep. 2025 -- Jun. 2027 (expected)}
 {M.S. in Computer Science (Computer and Network Security)}{Stanford, California}
+\vspace{-2pt}
 % \resumeItem{}
 
 \resumeSubheading
@@ -213,10 +214,10 @@
 {\textbf{Router automated vulnerability discovery} $|$ \emph{IoT, Reverse Engineering, Web Security}}{May 2022 -- Aug.2022}
 \resumeItemListStart
 \resumeItem{
-  Developed static \textbf{automated vulnerability discovery} framework for IoT firmware with IDA plugin script. Uncovered \textbf{7 unfixed CVEs} in Tenda AC 18 router, including stack overflow and command injection vulnerabilities.
+  Built an \textbf{IDA plugin} for static IoT firmware analysis, uncovering \textbf{7 unfixed CVEs} in the Tenda AC18 router.
 }
 \resumeItem{
-  Performed \textbf{dynamic analysis} using \textbf{QEMU} rehosting and \textbf{GDB} to craft PoC exploits for identified vulnerabilities.
+  Performed dynamic analysis with \textbf{QEMU} rehosting and \textbf{GDB} to develop PoC exploits for identified vulnerabilities.
 }
 \resumeItemListEnd
 
@@ -224,7 +225,7 @@
 
 %-----------PRESENTATIONS&PUBLICATIONS-----------
 \section{Presentations \& Publications}
-\begin{itemize}[leftmargin=0.15in, label={}, topsep=0pt, itemsep=-4pt]
+\begin{itemize}[leftmargin=0.15in, label={}, topsep=0pt, itemsep=-3pt]
   \small
   \item Yibo Liu, \dots, \textbf{Changyu Zhao}, \dots ``Oxidizer: Toward Concise and High-fidelity Rust Decompilation". \textit{2026 IEEE Symposium on Security and Privacy (IEEE S\&P)}. May 2026.
   \item \textbf{Changyu Zhao}, \dots ``LibIHT: A Hardware-Based Approach to Efficient and Evasion-Resilient Dynamic Binary Analysis". \textit{Proceedings of the 1st Workshop on Software Understanding and Reverse Engineering (SURE 2025)}. ACM, October 2025.
@@ -254,12 +255,11 @@
 \section{Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-    \textbf{Programming Languages}{: C/C++, Python, Java, Rust, Go, Assembly Language (x86/x64, ARM, MIPS)} \\
-    \textbf{Binary Security Tools}{: IDA Pro/Ghidra, GDB/Windbg, Angr, Qemu, AFL++, Frida, Joern} \\
-    \textbf{Web Security Tools}{: Burpsuit, Wireshark, Metasploit Framework, Kali Linux} \\
+    \textbf{Languages}{: C/C++, Python, Rust, Go, Java, x86/x64, ARM, MIPS Assembly} \\
+    \textbf{Systems \& Reverse Engineering}{: QEMU, GDB, WinDbg, IDA Pro, Ghidra} \\
+    \textbf{Security Analysis}{: Angr, AFL++, Frida, Joern, Wireshark, Metasploit, Kali} \\
   }}
 \end{itemize}
-
 
 %-------------------------------------------
 \end{document}

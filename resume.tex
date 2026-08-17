@@ -63,12 +63,31 @@
   }
 }
 
+\newcommand{\resumeItemNoBullet}[1]{
+  \item[]\hspace*{-\leftmargin}%
+  \begin{minipage}[t]{\dimexpr\linewidth+\leftmargin\relax}
+    \small #1\vspace{-2pt}
+  \end{minipage}
+}
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-4pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \if\relax\detokenize{#3#4}\relax\else
+        \textit{\small#3} & \textit{\small #4} \\
+      \fi
     \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumePublication}[3]{
+  \resumeItem{
+    \textbf{#1} \\
+    #2
+    \if\relax\detokenize{#3}\relax\else\\
+      #3
+    \fi
+  }
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -238,29 +257,41 @@ Hardened TCU firmware through kernel security configurations and systemd runtime
 
 % \resumeSubHeadingListEnd
 
-%-----------PRESENTATIONS&PUBLICATIONS-----------
-\section{Presentations \& Publications}
+%-----------PUBLICATIONS-----------
+\section{Publications}
 \begin{itemize}[leftmargin=0.15in, label={}, topsep=0pt, itemsep=-3pt]
-  \small
-  \item Yibo Liu, \dots, \textbf{Changyu Zhao}, \dots ``Oxidizer: Toward Concise and High-fidelity Rust Decompilation". \textit{2026 IEEE Symposium on Security and Privacy (IEEE S\&P)}. May 2026.
-  \item \textbf{Changyu Zhao}, \dots ``LibIHT: A Hardware-Based Approach to Efficient and Evasion-Resilient Dynamic Binary Analysis". \textit{Proceedings of the 1st Workshop on Software Understanding and Reverse Engineering (SURE 2025)}. ACM, October 2025.
-  \item Black Hat Arsenal, \textit{LIBIHT: A Cross-Platform Library for Accessing Intel Hardware Trace Features}, Las Vegas, NV, Aug. 2024
-\end{itemize}
 
-%-----------EXTRACURRICULAR ACTIVITIES-----------
-\section{Extracurricular Activities}
+\resumePublication
+{Oxidizer: Toward Concise and High-fidelity Rust Decompilation}
+{\textit{2026 IEEE Symposium on Security and Privacy (IEEE S\&P)}, May 2026}
+{}
+% {Yibo Liu, \dots, \textbf{Changyu Zhao}, \dots}
+
+\resumePublication
+{LibIHT: A Hardware-Based Approach to Efficient and Evasion-Resilient Dynamic Binary Analysis}
+{\textit{Proceedings of the 1st Workshop on Software Understanding and Reverse Engineering (SURE 2025), ACM}, October 2025}
+{}
+% {\textbf{Changyu Zhao}, \dots}
+
+\resumePublication
+{LIBIHT: A Cross-Platform Library for Accessing Intel Hardware Trace Features}
+{\textit{Black Hat Arsenal}, Aug. 2024}
+{}
+
+\end{itemize}\vspace{-5pt}
+
+%-----------COMPETITIONS-----------
+\section{Competitions}
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{r3kapig CTF Team}{Sep. 2021 -- Present}
-{Team Member}{International}
+{DEFCON CTF World Final}{2022 -- Present}
+{}{}
 \resumeItemListStart
-\resumeItem{
-  Entered \textbf{DEFCON CTF world final} from 2022 to 2025, ranked 12th, 7th, 4th, and 5th respectively.
+\resumeItemNoBullet{
+  DEFCON CTF world finalist from 2022 to 2025, ranked 12th, 7th, 4th, and 5th respectively. Competed in 120+ CTF competitions, expert in kernel and user-space exploitation and reverse engineering.
 }
-\resumeItem{
-  Competed in \textbf{120+ CTF competitions}, expert in kernel and user-space exploitation and reverse engineering.
-}
+  
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd

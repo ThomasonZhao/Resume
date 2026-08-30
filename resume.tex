@@ -64,10 +64,9 @@
 }
 
 \newcommand{\resumeItemNoBullet}[1]{
-  \item[]\hspace*{-\leftmargin}%
-  \begin{minipage}[t]{\dimexpr\linewidth+\leftmargin\relax}
-    \small #1\vspace{-2pt}
-  \end{minipage}
+  \item[]\small{
+    {\setlength{\leftskip}{-\leftmargin}#1 \vspace{-3pt}\par}
+  }
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -82,7 +81,7 @@
 
 \newcommand{\resumePublication}[3]{
   \resumeItem{
-    \textbf{#1} \\
+    \textbf{#1} \\\vspace{-1.5pt}
     #2
     \if\relax\detokenize{#3}\relax\else\\
       #3
@@ -111,7 +110,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
 
 %-------------------------------------------
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -135,7 +134,7 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Stanford University}{Sep. 2025 -- Jun. 2027 (expected)}
+{Stanford University}{Sep. 2025 -- Jun. 2027}
 {M.S. in Computer Science (Computer and Network Security)}{Stanford, California}
 \resumeItem{GPA: \textbf{4.0/4.0}}
 
@@ -154,17 +153,20 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Tesla}{Jun. 2023 -- Sep. 2023}
+{Tesla}{Jun. 2026 -- Sep. 2026}
 {Product Security Engineer Intern}{Palo Alto, California}
 \resumeItemListStart
 \resumeItem{
-Built an \textbf{agentic vulnerability research framework} integrating source, binary, and production build analysis, uncovering 10 previously unknown vulnerabilities including memory-corruption flaws in security-critical userspace and kernel components.
+Built a \textbf{multi-agent vulnerability-research system} across Tesla vehicle and energy firmware, running \textbf{600+ autonomous hunts} and \textbf{1300+ investigation trajectories}, yielding \textbf{28+ human-confirmed vulnerabilities, all remediated}.
 }
 \resumeItem{
-Conducted \textbf{vulnerability research} across vehicle infotainment, connectivity, and 4 energy-product platforms, assessing exploitability and root causes while driving remediation and pre-release fix verification with product engineering teams.
+Designed an \textbf{evidence-gated evaluation pipeline} that triaged \textbf{900+ vulnerability candidates} into \textbf{130+ high-priority findings}, gating claim escalation on reproducible PoCs, runtime evidence, provenance, and independent replay.
 }
 \resumeItem{
-Hardened TCU firmware through kernel security configurations and systemd runtime protections, reducing the effective remotely exploitable attack surface by \textbf{$\sim$30\%} and driving adoption of CFI enforcement for vehicle connectivity software.
+Chained \textbf{4 vulnerabilities across 3 service boundaries} to achieve \textbf{unauthorized user-level RCE} and privileged configuration tampering from the local network, affecting \textbf{8 energy-product families}; drove remediation and verified fixes.
+}
+\resumeItem{
+Drove production hardening of \textbf{vehicle connectivity systems}, strengthening exploit mitigations and establishing a Linux security baseline restricting kernel interfaces, unprivileged capabilities, memory exposure, and kernel information leaks.
 }
 \resumeItemListEnd
 
@@ -269,7 +271,7 @@ Hardened TCU firmware through kernel security configurations and systemd runtime
 
 \resumePublication
 {LibIHT: A Hardware-Based Approach to Efficient and Evasion-Resilient Dynamic Binary Analysis}
-{\textit{Proceedings of the 1st Workshop on Software Understanding and Reverse Engineering (SURE 2025), ACM}, October 2025}
+{\textit{Proceedings of the 1st Workshop on Software Understanding and Reverse Engineering (SURE), ACM, CCS}, October 2025}
 {}
 % {\textbf{Changyu Zhao}, \dots}
 
@@ -278,20 +280,22 @@ Hardened TCU firmware through kernel security configurations and systemd runtime
 {\textit{Black Hat Arsenal}, Aug. 2024}
 {}
 
-\end{itemize}\vspace{-5pt}
+\end{itemize}\vspace{-2pt}
 
 %-----------COMPETITIONS-----------
 \section{Competitions}
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{DEFCON CTF World Final}{2022 -- Present}
+{CTF Competitions}{2021 -- Present}
 {}{}
 \resumeItemListStart
-\resumeItemNoBullet{
-  DEFCON CTF world finalist from 2022 to 2025, ranked 12th, 7th, 4th, and 5th respectively. Competed in 120+ CTF competitions, expert in kernel and user-space exploitation and reverse engineering.
+\resumeItem{
+  \textbf{DEFCON CTF world finalist} from 2022 to 2026, ranked \textbf{12th, 7th, 4th, 5th, and 9th} respectively.
 }
-  
+\resumeItem{
+  Competed in \textbf{120+ CTF competitions}, expert in kernel and user-space exploitation and reverse engineering.
+}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd

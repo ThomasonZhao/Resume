@@ -247,31 +247,30 @@ Exposed the tracing runtime through direct IOCTL access, a \textbf{cross-platfor
 \section{Projects}
 \resumeSubHeadingListStart
 
-\resumeProjectHeading
-{\textbf{LLM Inference Engine} $|$ \emph{Stanford CS349D}}{Mar. 2026 -- Jun. 2026}
-\resumeItemListStart
-\resumeItem{
-Redesigned \textbf{scheduling, attention execution, and KV-memory management} in a PyTorch LLM serving engine, implementing continuous batching, paged KV cache/attention, chunked prefill, radix prefix caching, and request retraction.
-}
-\resumeItem{
-Optimized Qwen3-8B inference on NVIDIA L4 at 32-way concurrency, improving \textbf{throughput 2.21$\times$} (71 $\rightarrow$ 157 tok/s) and \textbf{median TPOT 58\%} (215 $\rightarrow$ 90 ms) with packed prefill, \texttt{torch.compile}, and CUDA Graphs.
-}
-\resumeItem{
-Built \textbf{hierarchical GPU--CPU KV caching} with asynchronous LRU-based GPU--CPU page migration through pinned host memory, increasing \textbf{cache hit rate 29.6\% $\rightarrow$ 76.0\%}, throughput 24.9\%, and \textbf{median TTFT 34.8\%}.
-}
-
-\resumeItemListEnd
-
 % \resumeProjectHeading
-% {\textbf{Router automated vulnerability discovery} $|$ \emph{IoT, Reverse Engineering, Web Security}}{May 2022 -- Aug.2022}
+% {\textbf{LLM Inference Engine} $|$ \emph{Stanford CS349D}}{Mar. 2026 -- Jun. 2026}
 % \resumeItemListStart
 % \resumeItem{
-%   Built an \textbf{IDA plugin} for static IoT firmware analysis, uncovering \textbf{7 unfixed CVEs} in the Tenda AC18 router.
+% Redesigned \textbf{scheduling, attention execution, and KV-memory management} in a PyTorch LLM serving engine, implementing continuous batching, paged KV cache/attention, chunked prefill, radix prefix caching, and request retraction.
 % }
 % \resumeItem{
-%   Performed dynamic analysis with \textbf{QEMU} rehosting and \textbf{GDB} to develop PoC exploits for identified vulnerabilities.
+% Optimized Qwen3-8B inference on NVIDIA L4 at 32-way concurrency, improving \textbf{throughput 2.21$\times$} (71 $\rightarrow$ 157 tok/s) and \textbf{median TPOT 58\%} (215 $\rightarrow$ 90 ms) with packed prefill, \texttt{torch.compile}, and CUDA Graphs.
+% }
+% \resumeItem{
+% Built \textbf{hierarchical GPU--CPU KV caching} with asynchronous LRU-based GPU--CPU page migration through pinned host memory, increasing \textbf{cache hit rate 29.6\% $\rightarrow$ 76.0\%}, throughput 24.9\%, and \textbf{median TTFT 34.8\%}.
 % }
 % \resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Router automated vulnerability discovery} $|$ \emph{Firmware Security, Reverse Engineering}}{May 2022 -- Aug.2022}
+\resumeItemListStart
+\resumeItem{
+  Built an \textbf{IDA plugin} for static IoT firmware analysis, uncovering \textbf{7 unfixed CVEs} in the Tenda AC18 router.
+}
+\resumeItem{
+  Performed dynamic analysis with \textbf{QEMU} rehosting and \textbf{GDB} to develop PoC exploits for identified vulnerabilities.
+}
+\resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
@@ -297,31 +296,32 @@ Built \textbf{hierarchical GPU--CPU KV caching} with asynchronous LRU-based GPU-
 \end{itemize}\vspace{-2pt}
 
 %-----------COMPETITIONS-----------
-% \section{Competitions}
-% \resumeSubHeadingListStart
+\section{Competitions}
+\resumeSubHeadingListStart
 
-% \resumeSubheading
-% {CTF Competitions}{2021 -- Present}
-% {}{}
-% \resumeItemListStart
-% \resumeItem{
-%   \textbf{DEFCON CTF world finalist} from 2022 to 2026, ranked \textbf{12th, 7th, 4th, 5th, and 9th} respectively.
-% }
-% \resumeItem{
-%   Competed in \textbf{120+ CTF competitions}, expert in kernel and user-space exploitation and reverse engineering.
-% }
-% \resumeItemListEnd
+\resumeSubheading
+{CTF Competitions}{2021 -- Present}
+{}{}
+\resumeItemListStart
+\resumeItem{
+  \textbf{DEFCON CTF world finalist} from 2022 to 2026, ranked \textbf{12th, 7th, 4th, 5th, and 9th} respectively.
+}
+\resumeItem{
+  Competed in \textbf{120+ CTF competitions}, expert in kernel and user-space exploitation and reverse engineering.
+}
+\resumeItemListEnd
 
-% \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-    \textbf{Languages}{: C/C++, Python, Rust, Go, Java, x86/x64, ARM, MIPS Assembly} \\
-    \textbf{Systems \& Reverse Engineering}{: QEMU, GDB, WinDbg, IDA Pro, Ghidra} \\
-    \textbf{Security Analysis}{: Angr, AFL++, Frida, Joern, Wireshark, Metasploit, Kali} \\
+    \textbf{Languages}{: C/C++, Python, Rust, Go; x86/x64, ARM, MIPS Assembly} \\
+    \textbf{AI/ML Systems}{: PyTorch, vLLM, SGLang, CUDA, Triton, CUDA Graphs} \\
+    \textbf{Systems}{: Linux/Windows Kernel, Distributed Systems, QEMU, GDB, WinDbg} \\
+    \textbf{Security}{: angr, AFL++, Frida, IDA Pro, Ghidra} \\
   }}
 \end{itemize}
 

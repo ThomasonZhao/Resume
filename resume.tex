@@ -157,16 +157,16 @@
 {Product Security Engineer Intern}{Palo Alto, California}
 \resumeItemListStart
 \resumeItem{
-Built a \textbf{multi-agent vulnerability-research system} across Tesla vehicle and energy firmware, running \textbf{600+ autonomous hunts} and \textbf{1300+ investigation trajectories}, yielding \textbf{28+ human-confirmed vulnerabilities, all remediated}.
+Built a multi-agent vulnerability-research system across Tesla vehicle and energy firmware, running \textbf{600+ autonomous hunts} and 1300+ investigation trajectories, yielding \textbf{28+ human-confirmed vulnerabilities}, all remediated.
 }
 \resumeItem{
-Designed an \textbf{evidence-gated evaluation pipeline} that triaged \textbf{900+ vulnerability candidates} into \textbf{130+ high-priority findings}, gating claim escalation on reproducible PoCs, runtime evidence, provenance, and independent replay.
+Designed an evidence-gated evaluation pipeline that triaged \textbf{900+ vulnerability candidates} into \textbf{130+ high-priority findings}, gating claim escalation on reproducible PoCs, runtime evidence, provenance, and independent replay.
 }
 \resumeItem{
-Chained \textbf{4 vulnerabilities across 3 service boundaries} to achieve \textbf{unauthorized user-level RCE} and privileged configuration tampering from the local network, affecting \textbf{8 energy-product families}; drove remediation and verified fixes.
+Chained 4 vulnerabilities across 3 service boundaries to achieve \textbf{unauthorized root-level RCE} and privileged configuration tampering from the local network, affecting \textbf{8 energy-product families}; drove remediation and verified fixes across teams.
 }
 \resumeItem{
-Drove production hardening of \textbf{vehicle connectivity systems}, strengthening exploit mitigations and establishing a Linux security baseline restricting kernel interfaces, unprivileged capabilities, memory exposure, and kernel information leaks.
+Drove \textbf{production hardening} of vehicle connectivity systems, strengthening exploit mitigations and establishing a \textbf{Linux security baseline} restricting kernel interfaces, unprivileged capabilities, memory exposure, and kernel information leaks.
 }
 \resumeItemListEnd
 
@@ -193,23 +193,24 @@ Drove production hardening of \textbf{vehicle connectivity systems}, strengtheni
 {Research Assistant, Advisor: Prof. Patrick McDaniel}{Madison, Wisconsin}
 \resumeItemListStart
 \resumeItem{
-  Conducted \textbf{comprehensive evaluation} of LibIHT against Intel Pin and DynamoRIO on real-world workloads, demonstrating \textbf{150x speedup}, \textbf{99\%+ code coverage}, and \textbf{complete resistance} to anti-debugging techniques employed by malware.
+Designed and executed a systematic performance and CFG-fidelity evaluation of LibIHT against Intel Pin and DynamoRIO, demonstrating \textbf{$>$150$\times$ lower runtime overhead} than Pin while retaining \textbf{99\%+ block/edge coverage}.
 }
 \resumeItem{
-  Established \textbf{reproducible benchmarking infrastructure} with 21 coreutils binaries and 10 malware specimens, automating performance metrics collection and visualization in \textbf{Python}. Paper accepted by \textbf{ACM CCS 2025} SURE workshop.
+Built \textbf{reproducible benchmarking infrastructure} across benign workloads and 10 anti-instrumentation PoCs, automating execution, CFG reconstruction, and ground-truth comparison; LibIHT remained \textbf{undetected across all 10 tests}.
 }
 \resumeItemListEnd
 
 \resumeSubheading
-{ASU SEFCOM Lab}{May. 2024 -- Sep. 2024}
+{ASU SEFCOM Lab}{May. 2023 -- Jul. 2023, May. 2024 -- Sep. 2024}
 {Research Assistant, Advisor: Prof. Yan Shoshitaishvili and Ruoyu Wang}{Tempe, Arizona}
 \resumeItemListStart
 \resumeItem{
-  Co-designed Oxidizer, the first \textbf{Rust-focused decompiler} built atop angr, implementing control-flow recovery, function prototype inference, and macro inference to address the unique challenges of analyzing memory-safe compiled binaries.
+  Built core \textbf{analysis and evaluation infrastructure} for Oxidizer, a Rust decompiler atop angr, extracting source-binary ground truth and type information from projects for high-fidelity decompilation and scalable cross-decompiler benchmarking.
 }
 \resumeItem{
-  Developed \textbf{static type recovery engine} to extract Rust-specific type metadata from compiled binaries and integrates findings into decompilation, improving accuracy of data structure and function signature reconstruction for security analysis.
+  Built \textbf{LibHopper}, a symbolic-execution system to discover reusable attack primitives in complex library data structures, scaling analysis across OpenSSL, OpenSSH, libcurl, and libpng and cataloging results for downstream security research.
 }
+
 \resumeItemListEnd
 
 \resumeSubheading
@@ -217,34 +218,49 @@ Drove production hardening of \textbf{vehicle connectivity systems}, strengtheni
 {Security Researcher Intern}{Beijing, China}
 \resumeItemListStart
 \resumeItem{
-  Architected \textbf{LibIHT}, a cross-platform dynamic binary tracing framework in \textbf{C/C++/Python} that leverages Intel LBR/BTS hardware features for control-flow tracing, achieving \textbf{150x speedup} over Intel Pin on large-scale program analysis.
+Built \textbf{LibIHT}, a C/C++ hardware-assisted tracing runtime at the \textbf{CPU/OS boundary} that reconstructs control flow using Intel LBR/BTS, eliminating heavyweight dynamic binary instrumentation and debugger-mediated tracing.
 }
 \resumeItem{
-  Designed unified \textbf{kernel driver architecture} for Linux and Windows with abstraction layers for OS and hardware, reducing code duplication by \textbf{40\%} while standardizing trace session management and improving cross-platform maintainability.
+Ported the Linux prototype to Windows by implementing a \textbf{kernel driver} and refactoring the tracing stack into a shared hardware backend with OS-specific kernel abstractions, enabling a \textbf{single codebase} to support both platforms.
 }
 \resumeItem{
-  Implemented \textbf{user-space API library} and debugger plugin system for \textbf{GDB/WinDbg} integration, enabling security analysts to visualize execution traces, identify anomalous control-flow patterns, and accelerate vulnerability discovery workflows.
+Exposed the tracing runtime through direct IOCTL access, a \textbf{cross-platform user-space API}, and \textbf{GDB/WinDbg plugins}, supporting custom analysis pipelines and interactive control-flow replay between breakpoints.
 }
 \resumeItemListEnd
 
-\resumeSubheading
-{ASU SEFCOM Lab}{May. 2023 -- Jul. 2023}
-{Research Assistant, Advisor: Prof. Yan Shoshitaishvili}{Tempe, Arizona}
-\resumeItemListStart
-\resumeItem{
-  Developed \textbf{LibHopper}, an automated exploitation primitive discovery tool combining debugger instrumentation with \textbf{symbolic execution} to identify exploitable memory corruption opportunities in library state structures.
-}
-\resumeItem{
-  Constructed \textbf{exploitation primitives dataset} spanning critical C libraries (OpenSSL, OpenSSH, libcurl, libpng), providing structured risk assessments to inform security research in automated exploit generation and vulnerability scanning tooling.
-}
-\resumeItemListEnd
+% \resumeSubheading
+% {ASU SEFCOM Lab}{May. 2023 -- Jul. 2023}
+% {Research Assistant, Advisor: Prof. Yan Shoshitaishvili}{Tempe, Arizona}
+% \resumeItemListStart
+% \resumeItem{
+%   Developed \textbf{LibHopper}, an automated exploitation primitive discovery tool combining debugger instrumentation with \textbf{symbolic execution} to identify exploitable memory corruption opportunities in library state structures.
+% }
+% \resumeItem{
+%   Constructed \textbf{exploitation primitives dataset} spanning critical C libraries (OpenSSL, OpenSSH, libcurl, libpng), providing structured risk assessments to inform security research in automated exploit generation and vulnerability scanning tooling.
+% }
+% \resumeItemListEnd
 
 
 \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
-% \section{Projects}
-% \resumeSubHeadingListStart
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{LLM Inference Engine} $|$ \emph{Stanford CS349D}}{Mar. 2026 -- Jun. 2026}
+\resumeItemListStart
+\resumeItem{
+Redesigned \textbf{scheduling, attention execution, and KV-memory management} in a PyTorch LLM serving engine, implementing continuous batching, paged KV cache/attention, chunked prefill, radix prefix caching, and request retraction.
+}
+\resumeItem{
+Optimized Qwen3-8B inference on NVIDIA L4 at 32-way concurrency, improving \textbf{throughput 2.21$\times$} (71 $\rightarrow$ 157 tok/s) and \textbf{median TPOT 58\%} (215 $\rightarrow$ 90 ms) with packed prefill, \texttt{torch.compile}, and CUDA Graphs.
+}
+\resumeItem{
+Built \textbf{hierarchical GPU--CPU KV caching} with asynchronous LRU-based GPU--CPU page migration through pinned host memory, increasing \textbf{cache hit rate 29.6\% $\rightarrow$ 76.0\%}, throughput 24.9\%, and \textbf{median TTFT 34.8\%}.
+}
+
+\resumeItemListEnd
 
 % \resumeProjectHeading
 % {\textbf{Router automated vulnerability discovery} $|$ \emph{IoT, Reverse Engineering, Web Security}}{May 2022 -- Aug.2022}
@@ -257,24 +273,22 @@ Drove production hardening of \textbf{vehicle connectivity systems}, strengtheni
 % }
 % \resumeItemListEnd
 
-% \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 
 %-----------PUBLICATIONS-----------
 \section{Publications}
-\begin{itemize}[leftmargin=0.15in, label={}, topsep=0pt, itemsep=-3pt]
 
+\begin{itemize}[leftmargin=0.15in, label={}, topsep=0pt, itemsep=-3pt]
 \resumePublication
 {Oxidizer: Toward Concise and High-fidelity Rust Decompilation}
 {\textit{2026 IEEE Symposium on Security and Privacy (IEEE S\&P)}, May 2026}
 {}
 % {Yibo Liu, \dots, \textbf{Changyu Zhao}, \dots}
-
 \resumePublication
 {LibIHT: A Hardware-Based Approach to Efficient and Evasion-Resilient Dynamic Binary Analysis}
 {\textit{Proceedings of the 1st Workshop on Software Understanding and Reverse Engineering (SURE), ACM, CCS}, October 2025}
 {}
 % {\textbf{Changyu Zhao}, \dots}
-
 \resumePublication
 {LIBIHT: A Cross-Platform Library for Accessing Intel Hardware Trace Features}
 {\textit{Black Hat Arsenal}, Aug. 2024}
@@ -283,22 +297,22 @@ Drove production hardening of \textbf{vehicle connectivity systems}, strengtheni
 \end{itemize}\vspace{-2pt}
 
 %-----------COMPETITIONS-----------
-\section{Competitions}
-\resumeSubHeadingListStart
+% \section{Competitions}
+% \resumeSubHeadingListStart
 
-\resumeSubheading
-{CTF Competitions}{2021 -- Present}
-{}{}
-\resumeItemListStart
-\resumeItem{
-  \textbf{DEFCON CTF world finalist} from 2022 to 2026, ranked \textbf{12th, 7th, 4th, 5th, and 9th} respectively.
-}
-\resumeItem{
-  Competed in \textbf{120+ CTF competitions}, expert in kernel and user-space exploitation and reverse engineering.
-}
-\resumeItemListEnd
+% \resumeSubheading
+% {CTF Competitions}{2021 -- Present}
+% {}{}
+% \resumeItemListStart
+% \resumeItem{
+%   \textbf{DEFCON CTF world finalist} from 2022 to 2026, ranked \textbf{12th, 7th, 4th, 5th, and 9th} respectively.
+% }
+% \resumeItem{
+%   Competed in \textbf{120+ CTF competitions}, expert in kernel and user-space exploitation and reverse engineering.
+% }
+% \resumeItemListEnd
 
-\resumeSubHeadingListEnd
+% \resumeSubHeadingListEnd
 
 
 %-----------PROGRAMMING SKILLS-----------
